@@ -9,6 +9,6 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.DISTRIBUTION_GITHUB_TOKEN }}
+          token: ${{ secrets.DISTRIBUTION_TOKEN }}
           repository: buildpacks/staging-registry-index
           event-type: release-event
